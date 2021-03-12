@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Konstanting";
+    src: url('../fonts/Konstanting.ttf');
+}
+
+body {
+    background-color: #7667ae71;
+    padding: 0;
+}
+
+td {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-family: "Konstanting",
+        sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #583500c6;
+}
