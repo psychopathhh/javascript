@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Konstanting";
+    src: url('../fonts/Konstanting.ttf');
+}
+
+body {
+    background-color: #7667ae71;
+    padding: 0;
+}
+
+ td {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-family: "Konstanting",
+        sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: #583500c6;
+} 
+
+#s0, #s1, #s2 {
+
+}
+#b0, #b1, #b2 {
+    width: auto;
+    height: 400px;
+    float: right;
+    position: absolute;
+}
+
+#b0 {
+    top: 0;
+    left: 300px;
+}
+
+#b1 {
+    top: 300px;
+    left: 300px;
+}
+
+#b2 {
+    top: 600px;
+    left: 300px;
+}
