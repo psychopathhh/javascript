@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/code-lesson-1.js"></script>
+    <script src="js/code-lesson-2.js"></script>
+    <script src="js/code-lesson-3.js"></script>
+    <script src="js/code-lesson-4.js"></script>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<!-- Создать функцию, генерирующую шахматную доску.  -->
+
+<body>
+
+<!--
+    <div><img src="smallImages/s0.jpg" width="300" height="300" id="s0"></div>
+    <div><img src="smallImages/s1.jpg" width="300" height="300" id="s1"></div>
+    <div><img src="smallImages/s2.jpg" width="300" height="300" id="s2"></div>
+-->
+    <script src="js/code-lesson-6.js"></script>
+
+    <!-- <div id="x"></div>
+    <script>
+        var xSize = 10,
+            ySize = 10,
+            x = document.createElement('table'),
+            lettersDidits = [
+                [' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', ' '],
+                ['8', '&#9820;', '&#9822;', '&#9821;', '&#9819;', '&#9818;', '&#9821;', '&#9822;', '&#9820;', '8'],
+                ['7', '&#9823;', '&#9823;', '&#9823;', '&#9823;', '&#9823;', '&#9823;', '&#9823;', '&#9823;', '7'],
+                ['6', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '6'],
+                ['5', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '5'],
+                ['4', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '4'],
+                ['3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '3'],
+                ['2', '&#9817;', '&#9817;', '&#9817;', '&#9817;', '&#9817;', '&#9817;', '&#9817;', '&#9817;', '2'],
+                ['1', '&#9814;', '&#9816;', '&#9815;', '&#9813;', '&#9812;', '&#9815;', '&#9816;', '&#9814;', '1'],
+                [' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', ' ']
+            ];
+        x.style.margin = '0 auto';
+        x.style.borderSpacing = '0';
+        for (var i = 0; i < xSize; i++) {
+            var tr = document.createElement('tr');
+            for (var j = 0; j < ySize; j++) {
+                var cell = document.createElement('td');
+                if (i == 0 || j == 0 || i == xSize - 1 || j == ySize - 1) {
+                    if (j == ySize - 1 || i == 0) {
+                        cell.style.transform = 'rotate(180deg)';
+                    }
+                } else {
+                    if ((i + j) % 2 == 0) {
+                        cell.style.backgroundColor = 'rgb(150, 130, 94)';
+                    } else {
+                        cell.style.backgroundColor = '#2c1b0a';
+                    }
+                }
+                cell.innerHTML = lettersDidits[i][j];
+                tr.appendChild(cell);
+            }
+            x.append(tr);
+        }
+        document.getElementById('x').append(x);
+    </script> -->
+</body>
+
+</html>
