@@ -17,7 +17,7 @@
 
 //2. Реализовать модуль корзины. Создать блок товаров и блок корзины. У каждого товара есть кнопка «Купить», при нажатии на которую происходит добавление имени и цены товара в блок корзины. Корзина должна уметь считать общую сумму заказа.
 
-var basket = [];
+/* var basket = [];
 var products = [
     {
         name: 'Виноград',
@@ -44,7 +44,7 @@ for (i=0; i<products.length; i++) {
     basket += products[i].price;
 }
 }
-console.log(basket);
+console.log(basket); */
 
 /* var but = document.createElement("button");
 header.append(but);	
