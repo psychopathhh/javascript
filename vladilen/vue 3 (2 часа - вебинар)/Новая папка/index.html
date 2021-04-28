@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="theme.css">
+    <title>Основы Vue</title>
+</head>
+
+<body>
+
+    <div class="container" id="app">
+        <div class="card">
+            <h1 :style="{
+                color: inputValue.length < 5 ? 'darkred' : 'darkblue'
+            }">{{ title }}</h1>
+            <div class="form-control">
+                <input type="text" :placeholder="placeholderString" v-model="inputValue" @keypress.enter="addNewNote">
+            </div>
+            <button v-on:click="addNewNote" class="btn">Добавить</button>
+            <hr>
+            <ul class="list" v-if="notes.length !== 0">
+                <li class="list-item" v-for="(note, idx) in notes">
+                    <!-- <span :class="note.length > 5 ? 'primary' : 'bold'">{{ idx + 1 }}. {{ toUpperCase(note) }}</span> -->
+                    <!-- <span :class="{
+                        'primary': true,
+                        'bold': note.length > 5
+                    }">{{ idx + 1 }}. {{ toUpperCase(note) }}</span> -->
+                    <span :class="['bold', {'primary': note.length > 5}]">{{ idx + 1 }}. {{ toUpperCase(note) }}</span>
+                    <button v-on:click="deleteNote(idx)" class="btn danger">Удалить</button>
+                </li>
+                <hr>
+                <li>
+                    <strong>Общее количество: {{ notes.length }}</strong> | Удвоенное: {{ doubleCountComputed }}
+
+                </li>
+
+            </ul>
+            <div v-else>Заметок пока нет</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
